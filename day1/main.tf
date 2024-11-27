@@ -1,6 +1,9 @@
-resource "aws_instance" "name" {
-    ami = "ami-0453ec754f44f9a4a"
-    instance_type = "t2.micro"
-    key_name = "eswar"
-     
-  }
+resource "aws_instance" "test" {
+
+ami = var.ami_id
+
+instance_type = var.instance_type
+
+key_name = "eswar"
+  
+}
